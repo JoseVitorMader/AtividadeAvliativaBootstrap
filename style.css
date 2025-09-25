@@ -7,6 +7,30 @@
     #searchInput {
         font-size: 16px;
     }
-    
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .bi {
+        width: 24px;
+        height: 24px;
+    }
+
+    .bi-person-circle {
+        width: 24px;
+        height: 24px;
+    }
+
+    .bi-grid-3x3-gap {
+        width: 24px;
+        height: 24px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
 }
 
