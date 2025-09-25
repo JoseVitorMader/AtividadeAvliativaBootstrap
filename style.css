@@ -1,0 +1,12 @@
+
+@media (max-width: 576px) {
+    .display-1 {
+        font-size: 3rem;
+    }
+    
+    #searchInput {
+        font-size: 16px;
+    }
+    
+}
+

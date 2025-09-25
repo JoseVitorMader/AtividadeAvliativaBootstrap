@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google - Recriação com Bootstrap</title>
+    <!--CND FODA -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Uso do d-flex flex-column min-vh-100 pra ocupar toda a altura da viewport  pois caso contrario ficaria colado à area de pesquisa -->
+
+    <header>
+        <!-- Navbar pros links de gmail e imagens -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- navbar-brand pradeixar o fundo invisivel -->
+                <a class="navbar-brand" href="#"></a>
+
+                <!-- navbar-toggler pro mobile pra ter responsividade  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- navbar-collapse para quando o hamburguer fechar e abrir -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- navbar-nav ms -auto pra deixar os link bonitinho na direita -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#" aria-label="Acessar Gmail">Gmail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#" aria-label="Acessar Google Imagens">Imagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" style="margin-right: 10px;" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+                                <path d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                            </svg>
+                        </li>
+                        <li class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <!-- flex-grow-1 pra fazer o main ocupar tudo o espaço q tem -->
+        <!-- d-flex align-items-center justify-content-center para terminar de centralizar os coiso -->
+        <div class="container text-center">
+            <section class="mb-4">
+                <h1 class="display-1 fw-normal mb-4">
+                    <span style="color: blue;">G</span>
+                    <span style="color: red;">o</span>
+                    <span style="color: yellow;">o</span>
+                    <span style="color: blue;">g</span>
+                    <span style="color: green;">l</span>
+                    <span style="color: red;">e</span>
+                    <span style="color: blue;">.</span>
+                    <span style="color: red;">c</span>
+                    <span style="color: yellow;">o</span>
+                    <span style="color: green;">m</span>
+                </h1>
+                <!-- display-1 para deixar o texto big big, fw-normal para deixar na grossura normal -->
+                <!-- span pra deixar uma letra de cada cor, mb-4 para margem inferior -->
+            </section>
+
+           
+            <section>
+                <form class="row justify-content-center" role="search">
+                    <!-- row justify-content-center pra centraliza a caraia do formulário -->
+
+                    
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Grid responsivo -->
+                        
+                        <!-- Label oculto para acessibilidade -->
+                        <label for="searchInput" class="visually-hidden">Campo de busca do Google</label>
+                        <!-- visually-hidden pra esconde visualmente mas manter pros leitores de tela -->
+                        
+                        <!-- Input pra fazer a area de busca-->
+                        <input 
+                            type="search" 
+                            class="form-control form-control-lg rounded-pill mb-4" 
+                            id="searchInput"
+                            placeholder="Pesquisar no Google"
+                            aria-label="Pesquisar no Google"
+                            autocomplete="off">
+                        <!-- rounded-pill pra deixar as borda arredondada -->
+                    </div>
+                    
+
+                    <div class="col-12">
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <!-- d-flex pro layout flexível -->
+                            <!-- flex-column flex-sm-row pra ter coluna no mobile e reto no tablet -->
+                            <!-- gap-3 para espaçamento entre os butão -->
+                            <!-- justify-content-center pra centralizar os botao -->
+                            
+                            <button type="submit" class="btn btn-light btn-lg px-4">
+                                <!-- btn-light para cor cinza claro -->
+                                <!-- btn-lg para tamanho maior, px-4 pro padding horizontal -->
+                                Pesquisa Google
+                            </button>
+                            
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                                <!-- btn-outline-secondary pro botão com borda cinza -->
+                                Estou com azar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light border-top">
+        <!-- bg-light pro fundo cinza claro, border-top para linha superior que divide o footer da tela coisada -->
+        <div class="container-fluid">
+            <div class="row py-3">
+                <!-- py-3 adiciona o padding vertical -->
+                
+                <div class="col-12 col-md-6">
+                    <!-- col-12 col-md-6: deixa o mobile legal e a tela do tablet normal -->
+                    <ul class="list-unstyled d-flex flex-column flex-md-row gap-3 mb-0">
+                        <!-- list-unstyled pra remove os marcadores da lista -->
+                        <!-- d-flex flex-column flex-md-row: coluna no mobile, e normal no pc -->
+                        <li><a href="#" class="text-muted text-decoration-none">Sobre</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Deepweb</a></li>
+                        <!-- text-muted pra cor cinza, text-decoration-none pra remove o sublinhado -->
+                    </ul>
+                </div>
+                
+                <div class="col-12 col-md-6">
+                    <ul class="list-unstyled d-flex flex-column flex-md-row gap-3 justify-content-md-end mb-0">
+                        <!-- justify-content-md-end pra alinha à direita no pc -->
+                        <li><a href="#" class="text-muted text-decoration-none">Privacidade</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Termos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CDN do bootstrap pras animação e coisa legl interativa -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script>
+        // n deixar os botão atuarem
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchForm = document.querySelector('form[role="search"]');
+            const luckyButton = document.querySelector('button[type="button"]');
+            
+            // nao deixar os usuário  enviar o formulário
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                console.log('Busca realizada:', document.getElementById('searchInput').value);
+            });
+            //n deixa o botão fazer nada 2x
+            luckyButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Botão "Estou com sorte" clicado');
+            });
+        });
+    </script>
+</body>
+</html>
