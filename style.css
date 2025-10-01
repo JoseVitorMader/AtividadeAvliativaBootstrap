@@ -1,6 +1,14 @@
+/* Remove espaçamento entre as letras do logo Google */
+.display-1 {
+    font-size: 0;
+}
+
+.display-1 span {
+    font-size: 6rem;
+}
 
 @media (max-width: 576px) {
-    .display-1 {
+    .display-1 span {
         font-size: 3rem;
     }
     
@@ -35,7 +43,7 @@
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .display-1 {
+    .display-1 span {
         font-size: 4rem;
     }
     
